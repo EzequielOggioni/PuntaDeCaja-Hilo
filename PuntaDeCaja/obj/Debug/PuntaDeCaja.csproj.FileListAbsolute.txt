@@ -1,0 +1,7 @@
+C:\Users\Paola\source\repos\PuntaDeCaja\PuntaDeCaja\obj\Debug\PuntaDeCaja.csprojAssemblyReference.cache
+C:\Users\Paola\source\repos\PuntaDeCaja\PuntaDeCaja\obj\Debug\PuntaDeCaja.csproj.CoreCompileInputs.cache
+C:\Users\Paola\source\repos\PuntaDeCaja\PuntaDeCaja\bin\Debug\PuntaDeCaja.exe.config
+C:\Users\Paola\source\repos\PuntaDeCaja\PuntaDeCaja\bin\Debug\PuntaDeCaja.exe
+C:\Users\Paola\source\repos\PuntaDeCaja\PuntaDeCaja\bin\Debug\PuntaDeCaja.pdb
+C:\Users\Paola\source\repos\PuntaDeCaja\PuntaDeCaja\obj\Debug\PuntaDeCaja.exe
+C:\Users\Paola\source\repos\PuntaDeCaja\PuntaDeCaja\obj\Debug\PuntaDeCaja.pdb
