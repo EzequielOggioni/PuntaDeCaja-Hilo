@@ -26,16 +26,17 @@ namespace PuntaDeCaja
             Banco.personas.Enqueue(CrearPersona());
             Thread hiloCola = new Thread(agregarPersona);
 
-            
-            for (int i = 0; i < random.Next(2,5); i++)
+
+            for (int i = 0; i < random.Next(2, 5); i++)
             {
                 //creo los cajeros
                 Cajero cajero = new Cajero();
                 cajero.Numero = (i + 1).ToString();
+                //Va agregando los hilos 
                 hilosCajas.Add(new Thread(cajero.AtenderProximaPersona));
 
             }
-            
+
             //empieza a entrar gente cada 3 segundos;
             hiloCola.Start();
 
@@ -47,13 +48,16 @@ namespace PuntaDeCaja
             Console.WriteLine(Banco.personas.Count);
             Console.ReadLine();
 
-            if(hiloCola.IsAlive)
+            Console.WriteLine(Banco.personas.Count);
+            Console.ReadLine();
+
+            if (hiloCola.IsAlive)
                 hiloCola.Abort();
 
             foreach (Thread cadaCaja in hilosCajas)
             {
                 if (cadaCaja.IsAlive)
-                    cadaCaja.Abort(); 
+                    cadaCaja.Abort();
             }
 
         }
@@ -70,13 +74,13 @@ namespace PuntaDeCaja
         {
             Persona p1 = new Persona();
             p1.Nombre = random.Next().ToString();
-            
-            for (int i = 0; i < random.Next(1,10); i++)
+
+            for (int i = 0; i < random.Next(1, 10); i++)
             {
-            Factura f1 = new Factura();
-            f1.Numero = random.Next();
+                Factura f1 = new Factura();
+                f1.Numero = random.Next();
                 f1.Precio = random.Next(1000, 100000) / 100;
-                p1.Facturas.Add(f1); 
+                p1.Facturas.Add(f1);
             }
 
             return p1;
